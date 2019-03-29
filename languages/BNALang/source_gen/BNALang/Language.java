@@ -12,7 +12,6 @@ import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import BNALang.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
-import BNALang.structure.null;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import BNALang.structure.ConceptPresentationAspectImpl;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
@@ -55,7 +54,7 @@ public class Language extends LanguageRuntime {
       return aspectClass.cast(new EditorAspectDescriptorImpl());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
-      return aspectClass.cast(new null());
+      return aspectClass.cast(new BNALang.structure.StructureAspectDescriptor());
     }
     if (aspectClass == ConceptPresentationAspect.class) {
       return aspectClass.cast(new ConceptPresentationAspectImpl());
