@@ -80,6 +80,12 @@
     <property role="EcuMT" value="1975795149174970668" />
     <property role="TrG5h" value="Asset" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1HFrNxfwYpO" role="1TKVEi">
+      <property role="IQ2ns" value="1975795149174990452" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="indentifiedBy" />
+      <ref role="20lvS9" node="1HFrNxfwY7Q" resolve="String" />
+    </node>
     <node concept="PrWs8" id="1HFrNxfwT$H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -111,15 +117,27 @@
     <property role="EcuMT" value="1975795149174972869" />
     <property role="TrG5h" value="Transaction" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1HFrNxfwY88" role="1TKVEi">
+      <property role="IQ2ns" value="1975795149174989320" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="String" />
+      <ref role="20lvS9" node="1HFrNxfwY7Q" resolve="String" />
+    </node>
     <node concept="PrWs8" id="1HFrNxfwU76" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="1HFrNxfwU$q" role="1TKVEi">
-      <property role="IQ2ns" value="1975795149174974746" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="attributes" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+  </node>
+  <node concept="1TIwiD" id="1HFrNxfwY7Q">
+    <property role="EcuMT" value="1975795149174989302" />
+    <property role="TrG5h" value="String" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1HFrNxfwY7R" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1HFrNxfwY7T" role="1TKVEl">
+      <property role="IQ2nx" value="1975795149174989305" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
