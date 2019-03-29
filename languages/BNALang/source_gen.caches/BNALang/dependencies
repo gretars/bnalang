@@ -5,7 +5,7 @@
     <classNode dependClassName="BNALang.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="BNALang.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="BNALang.structure.ConceptPresentationAspectImpl" />
-    <classNode dependClassName="BNALang.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="BNALang.structure.null" />
     <classNode dependClassName="BNALang.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
