@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Asset;
   private ConceptPresentation props_Participant;
   private ConceptPresentation props_SmartContract;
+  private ConceptPresentation props_Transaction;
 
   @Override
   @Nullable
@@ -35,10 +36,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SmartContract:
         if (props_SmartContract == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("SmartContract");
+          cpb.presentationByName();
           props_SmartContract = cpb.create();
         }
         return props_SmartContract;
+      case LanguageConceptSwitch.Transaction:
+        if (props_Transaction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Transaction = cpb.create();
+        }
+        return props_Transaction;
     }
     return null;
   }

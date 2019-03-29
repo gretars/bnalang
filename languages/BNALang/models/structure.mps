@@ -72,6 +72,9 @@
       <property role="TrG5h" value="namespace" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="1HFrNxfwU7j" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1HFrNxfwT$G">
     <property role="EcuMT" value="1975795149174970668" />
@@ -79,6 +82,11 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1HFrNxfwT$H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1HFrNxfwU$7" role="1TKVEl">
+      <property role="IQ2nx" value="1975795149174974727" />
+      <property role="TrG5h" value="identifiedBy" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HFrNxfwTIx">
@@ -88,6 +96,16 @@
     <node concept="PrWs8" id="1HFrNxfwTIy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="1HFrNxfwU$c" role="1TKVEl">
+      <property role="IQ2nx" value="1975795149174974732" />
+      <property role="TrG5h" value="identifiedBy" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1HFrNxfwU$e" role="1TKVEl">
+      <property role="IQ2nx" value="1975795149174974734" />
+      <property role="TrG5h" value="abstract" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1HFrNxfwU75">
     <property role="EcuMT" value="1975795149174972869" />
@@ -95,6 +113,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1HFrNxfwU76" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1HFrNxfwU$q" role="1TKVEi">
+      <property role="IQ2ns" value="1975795149174974746" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpck:4uZwTti3_$T" resolve="Attribute" />
     </node>
   </node>
 </model>
