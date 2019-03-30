@@ -25,6 +25,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Asset:
         if (props_Asset == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Participants deal with assets");
           cpb.presentationByName();
           props_Asset = cpb.create();
         }
@@ -32,6 +33,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Attribute:
         if (props_Attribute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Attributes are part of Assets, Participants and Transactions");
           cpb.presentationByName();
           props_Attribute = cpb.create();
         }
@@ -39,6 +41,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Functions have parameters");
           cpb.presentationByName();
           props_Parameter = cpb.create();
         }
@@ -46,6 +49,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Participant:
         if (props_Participant == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Participants are the users or the customer of a given contract");
           cpb.presentationByName();
           props_Participant = cpb.create();
         }
@@ -53,6 +57,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SmartContract:
         if (props_SmartContract == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Smart contract for the BNA file");
           cpb.presentationByName();
           props_SmartContract = cpb.create();
         }

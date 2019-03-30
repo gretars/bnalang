@@ -12,6 +12,8 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -45,6 +47,8 @@
     <property role="EcuMT" value="1975795149174969590" />
     <property role="TrG5h" value="SmartContract" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Smart Contract" />
+    <property role="R4oN_" value="Smart contract for the BNA file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1HFrNxfwT$J" role="1TKVEi">
       <property role="IQ2ns" value="1975795149174970671" />
@@ -79,13 +83,9 @@
   <node concept="1TIwiD" id="1HFrNxfwT$G">
     <property role="EcuMT" value="1975795149174970668" />
     <property role="TrG5h" value="Asset" />
+    <property role="34LRSv" value="Asset" />
+    <property role="R4oN_" value="Participants deal with assets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1HFrNxfwYpO" role="1TKVEi">
-      <property role="IQ2ns" value="1975795149174990452" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="indentifiedBy" />
-      <ref role="20lvS9" node="1HFrNxfwY7Q" resolve="String" />
-    </node>
     <node concept="PrWs8" id="1HFrNxfwT$H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -105,6 +105,8 @@
   <node concept="1TIwiD" id="1HFrNxfwTIx">
     <property role="EcuMT" value="1975795149174971297" />
     <property role="TrG5h" value="Participant" />
+    <property role="34LRSv" value="Participant" />
+    <property role="R4oN_" value="Participants are the users or the customer of a given contract" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1HFrNxfwTIy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -118,6 +120,11 @@
       <property role="IQ2nx" value="1975795149174974734" />
       <property role="TrG5h" value="abstract" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="1HFrNxfx23V" role="1TKVEl">
+      <property role="IQ2nx" value="1975795149175005435" />
+      <property role="TrG5h" value="extends" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="1HFrNxfwZSJ" role="1TKVEi">
       <property role="IQ2ns" value="1975795149174996527" />
@@ -165,6 +172,8 @@
   <node concept="1TIwiD" id="1HFrNxfwYDc">
     <property role="EcuMT" value="1975795149174991436" />
     <property role="TrG5h" value="Parameter" />
+    <property role="34LRSv" value="Parameter" />
+    <property role="R4oN_" value="Functions have parameters" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1HFrNxfwYDd" role="1TKVEl">
       <property role="IQ2nx" value="1975795149174991437" />
@@ -183,6 +192,8 @@
   <node concept="1TIwiD" id="1HFrNxfwZSu">
     <property role="EcuMT" value="1975795149174996510" />
     <property role="TrG5h" value="Attribute" />
+    <property role="34LRSv" value="Attribute" />
+    <property role="R4oN_" value="Attributes are part of Assets, Participants and Transactions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1HFrNxfwZSv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -196,6 +207,11 @@
       <property role="IQ2nx" value="1975795149174996515" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1HFrNxfx1Ga" role="1TKVEl">
+      <property role="IQ2nx" value="1975795149175003914" />
+      <property role="TrG5h" value="optional" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

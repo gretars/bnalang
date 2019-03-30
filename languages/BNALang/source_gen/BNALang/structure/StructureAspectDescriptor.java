@@ -71,8 +71,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:da556fcd-83c8-41d5-9fb7-1cc44bb39ea9(BNALang.structure)/1975795149174970668");
     b.version(2);
     b.property("identifiedBy", 0x1b6b6f384f83a907L).type(PrimitiveTypeId.STRING).origin("1975795149174974727").done();
-    b.associate("indentifiedBy", 0x1b6b6f384f83e674L).target(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83e1f6L).optional(true).origin("1975795149174990452").done();
     b.aggregate("attributes", 0x1b6b6f384f83fe2cL).target(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL).optional(true).ordered(true).multiple(true).origin("1975795149174996524").done();
+    b.alias("Asset");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAttribute() {
@@ -83,6 +83,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("type", 0x1b6b6f384f83fe21L).type(PrimitiveTypeId.STRING).origin("1975795149174996513").done();
     b.property("value", 0x1b6b6f384f83fe23L).type(PrimitiveTypeId.STRING).origin("1975795149174996515").done();
+    b.property("optional", 0x1b6b6f384f841b0aL).type(PrimitiveTypeId.BOOLEAN).origin("1975795149175003914").done();
+    b.alias("Attribute");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForParameter() {
@@ -93,6 +95,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("type", 0x1b6b6f384f83ea4dL).type(PrimitiveTypeId.STRING).origin("1975795149174991437").done();
     b.property("value", 0x1b6b6f384f83ea4fL).type(PrimitiveTypeId.STRING).origin("1975795149174991439").done();
+    b.alias("Parameter");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForParticipant() {
@@ -103,7 +106,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("identifiedBy", 0x1b6b6f384f83a90cL).type(PrimitiveTypeId.STRING).origin("1975795149174974732").done();
     b.property("abstract", 0x1b6b6f384f83a90eL).type(PrimitiveTypeId.BOOLEAN).origin("1975795149174974734").done();
+    b.property("extends", 0x1b6b6f384f8420fbL).type(PrimitiveTypeId.STRING).origin("1975795149175005435").done();
     b.aggregate("attributes", 0x1b6b6f384f83fe2fL).target(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL).optional(true).ordered(true).multiple(true).origin("1975795149174996527").done();
+    b.alias("Participant");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSmartContract() {
@@ -116,6 +121,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("assets", 0x1b6b6f384f83992fL).target(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83992cL).optional(true).ordered(true).multiple(true).origin("1975795149174970671").done();
     b.aggregate("participants", 0x1b6b6f384f839ba4L).target(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f839ba1L).optional(true).ordered(true).multiple(true).origin("1975795149174971300").done();
     b.aggregate("transactions", 0x1b6b6f384f83a1ccL).target(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83a1c5L).optional(true).ordered(true).multiple(true).origin("1975795149174972876").done();
+    b.alias("Smart Contract");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForString() {
