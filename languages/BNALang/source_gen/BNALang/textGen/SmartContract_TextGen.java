@@ -28,8 +28,19 @@ public class SmartContract_TextGen extends TextGenDescriptorBase {
     }
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
-
-
-
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f8394f6L, 0x1b6b6f384f839ba4L, "participants"))) {
+      tgs.appendNode(item);
+    }
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f8394f6L, 0x1b6b6f384f83a1ccL, "transactions"))) {
+      tgs.appendNode(item);
+    }
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.newLine();
   }
 }

@@ -10,22 +10,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
-public class Asset_TextGen extends TextGenDescriptorBase {
+public class Transaction_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("asset ");
+    tgs.append("transaction ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    tgs.append(" indetified by ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83992cL, 0x1b6b6f384f83a907L, "identifiedBy")));
     tgs.append(" {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83992cL, 0x1b6b6f384f83fe2cL, "attributes"))) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83a1c5L, 0x1b6b6f384f83fe31L, "attributes"))) {
       tgs.appendNode(item);
     }
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
+    tgs.newLine();
   }
 }

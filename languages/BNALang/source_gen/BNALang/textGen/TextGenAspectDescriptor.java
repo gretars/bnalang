@@ -11,6 +11,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.text.rt.TextGenModelOutline;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class TextGenAspectDescriptor extends TextGenAspectBase {
   private final LanguageConceptSwitch myIndex = new LanguageConceptSwitch();
@@ -24,8 +25,14 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.Asset:
         return new Asset_TextGen();
+      case LanguageConceptSwitch.Attribute:
+        return new Attribute_TextGen();
+      case LanguageConceptSwitch.Participant:
+        return new Participant_TextGen();
       case LanguageConceptSwitch.SmartContract:
         return new SmartContract_TextGen();
+      case LanguageConceptSwitch.Transaction:
+        return new Transaction_TextGen();
     }
     return null;
   }
@@ -42,9 +49,9 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
   }
   private static String getFileName_SmartContract(SNode node) {
-    return node.getName();
+    return SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   private static String getFileExtension_SmartContract(SNode node) {
-    return null;
+    return "bna";
   }
 }

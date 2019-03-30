@@ -87,12 +87,12 @@
       <node concept="1kU94A" id="1HFrNxfx1FQ" role="1kU94k">
         <property role="TrG5h" value="productId" />
         <property role="1kU94p" value="String" />
-        <property role="1kU94r" value="&quot;&quot;" />
+        <property role="1kU94r" value="&quot;" />
       </node>
       <node concept="1kU94A" id="1HFrNxfx1FS" role="1kU94k">
         <property role="TrG5h" value="description" />
         <property role="1kU94p" value="String" />
-        <property role="1kU94r" value="&quot;&quot;" />
+        <property role="1kU94r" value="&quot;" />
       </node>
       <node concept="1kU94A" id="1HFrNxfx1FV" role="1kU94k">
         <property role="TrG5h" value="owner" />

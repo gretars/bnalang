@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-5do3gq4geth7arorz0t009virnbcove">
-  <files names="Asset_TextGen.java:SmartContract_TextGen.java:TextGenAspectDescriptor.java" />
+<product version="3" modelHash="21qyf3tejw53hp0lx1c0hfj4nc34bk6">
+  <files names="Asset_TextGen.java:Attribute_TextGen.java:Participant_TextGen.java:SmartContract_TextGen.java:TextGenAspectDescriptor.java:Transaction_TextGen.java" />
 </product>
 

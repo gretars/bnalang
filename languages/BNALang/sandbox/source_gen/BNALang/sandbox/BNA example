@@ -1,7 +1,0 @@
-/* BNA example */
-namespace org.acme.bnaexample
-
-asset Product indetified by productId {
-// attributes
-// some code
-}
