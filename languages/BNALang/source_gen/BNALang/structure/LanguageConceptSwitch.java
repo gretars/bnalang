@@ -14,8 +14,7 @@ public final class LanguageConceptSwitch {
   public static final int Parameter = 2;
   public static final int Participant = 3;
   public static final int SmartContract = 4;
-  public static final int String = 5;
-  public static final int Transaction = 6;
+  public static final int Transaction = 5;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x2eaecd5c01894365L, 0x9c9c356775610810L);
@@ -24,7 +23,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x1b6b6f384f83ea4cL, Parameter);
     builder.put(0x1b6b6f384f839ba1L, Participant);
     builder.put(0x1b6b6f384f8394f6L, SmartContract);
-    builder.put(0x1b6b6f384f83e1f6L, String);
     builder.put(0x1b6b6f384f83a1c5L, Transaction);
     myIndex = builder.seal();
   }

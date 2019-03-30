@@ -14,7 +14,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Parameter;
   private ConceptPresentation props_Participant;
   private ConceptPresentation props_SmartContract;
-  private ConceptPresentation props_String;
   private ConceptPresentation props_Transaction;
 
   @Override
@@ -62,13 +61,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SmartContract = cpb.create();
         }
         return props_SmartContract;
-      case LanguageConceptSwitch.String:
-        if (props_String == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_String = cpb.create();
-        }
-        return props_String;
       case LanguageConceptSwitch.Transaction:
         if (props_Transaction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
