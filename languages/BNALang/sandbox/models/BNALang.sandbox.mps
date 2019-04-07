@@ -49,8 +49,8 @@
       </node>
       <node concept="1kU94A" id="1HFrNxfx2rM" role="1kU949">
         <property role="TrG5h" value="owner" />
-        <property role="1kU94p" value="--&gt;" />
-        <property role="1kU94r" value="Seller" />
+        <property role="1kU94p" value="--&gt; Seller" />
+        <property role="1kU94r" value="S" />
       </node>
     </node>
     <node concept="1kUfip" id="1HFrNxfx23P" role="1kUfis">
@@ -96,8 +96,8 @@
       </node>
       <node concept="1kU94A" id="1HFrNxfx1FV" role="1kU94k">
         <property role="TrG5h" value="owner" />
-        <property role="1kU94p" value="--&gt;" />
-        <property role="1kU94r" value="User" />
+        <property role="1kU94p" value="--&gt; User" />
+        <property role="1kU94r" value="S" />
       </node>
     </node>
   </node>

@@ -13,12 +13,16 @@ public class Attribute_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
+    if (SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL, 0x1b6b6f384f83fe21L, "type")).contains("-->")) {
+      tgs.append("");
+    } else {
+      tgs.append("o ");
+    }
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL, 0x1b6b6f384f83fe21L, "type")));
     tgs.append(" ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(" ");
-    if (isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL, 0x1b6b6f384f83fe23L, "value")))) {
-      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL, 0x1b6b6f384f83fe23L, "value")));
+    if (!(isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL, 0x1b6b6f384f83fe23L, "value"))))) {
     }
     if (SPropertyOperations.getBoolean(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f83fe1eL, 0x1b6b6f384f841b0aL, "optional"))) {
       tgs.append(" optional");

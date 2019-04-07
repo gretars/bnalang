@@ -24,7 +24,7 @@ public class Participant_TextGen extends TextGenDescriptorBase {
       tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f839ba1L, 0x1b6b6f384f8420fbL, "extends")));
     }
     if (SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f839ba1L, 0x1b6b6f384f83a90cL, "identifiedBy")) != null) {
-      tgs.append(" indentified by ");
+      tgs.append(" identified by ");
       tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x2eaecd5c01894365L, 0x9c9c356775610810L, 0x1b6b6f384f839ba1L, 0x1b6b6f384f83a90cL, "identifiedBy")));
     }
     tgs.append(" {");
