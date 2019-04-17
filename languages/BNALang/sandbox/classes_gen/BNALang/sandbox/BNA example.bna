@@ -1,27 +1,27 @@
 /* BNA example */
 namespace org.acme.bnaexample
 
-asset Product indetified by productId {
-String productId 
-String description 
---> owner 
+asset Product identified by productId {
+o String productId 
+o String description 
+--> User owner 
 
 }
 
 participant Seller extends User {
-String organisation 
+o String organisation 
 
 }
-abstract participant User indentified by email {
-String email 
-Double balance 
-Product[] products  optional
+abstract participant User identified by email {
+o String email 
+o Double balance 
+o Product[] products  optional
 
 }
 
 transaction AddProduct {
-String description 
---> owner 
+o String description 
+--> Seller owner 
 
 }
 
